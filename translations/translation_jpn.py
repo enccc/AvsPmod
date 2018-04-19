@@ -16,6 +16,7 @@
 
 # Japanese translation authors:
 #   niiyan v2.0.2 - v2.4.1
+#   enccc  v2.5.1
 
 version = "2.5.1"
 
@@ -25,7 +26,9 @@ messages = {
     "Background" : u"背景色",
     "Font" : u"フォント",
     "Text color" : u"文字色",
-    "Reset" : u"", # New in v2.5.0
+    "Select a predefined theme" : u"事前定義済みテーマの選択",
+    "Only change colours" : u"色のみ変更",
+    "When selecting a theme, don't change current fonts" : u"テーマが選択された際、現在のフォントを変更しない",
     "OK" : u"",
     "Cancel" : u"キャンセル",
     "Page:" : u"ページ:",
@@ -73,9 +76,9 @@ messages = {
     "Edit selected" : u"編集",
     "Delete selected" : u"削除",
     "Select installed" : u"インストール済みのプラグインを選択",
-    "Import" : u"", # New in v2.5.0
+    "Import" : u"インポート",
     "Import from files" : u"ファイルからインポート",
-    "Import from wiki" : u"", # New in v2.5.0
+    "Import from wiki" : u"wikiからインポート",
     "Export customizations" : u"カスタマイズのエクスポート",
     "Clear customizations" : u"カスタマイズのクリア",
     "Clear manual presets" : u"プリセットのクリア",
@@ -98,35 +101,35 @@ messages = {
     "Invalid filter name!" : u"無効なフィルタ名です！",
     "Renaming not allowed!" : u"名前を変更することはできません！",
     "You must use dllname_function naming format for plugins!" : u"プラグインについては「dll 名_関数」という命名書式を使用してください！",
-    "Long name" : u"", # New in v2.5.0
-    "Short name" : u"", # New in v2.5.0
-    "Both" : u"", # New in v2.5.0
-    "Only long names" : u"", # New in v2.5.0
-    "Only short names" : u"", # New in v2.5.0
-    "All names" : u"", # New in v2.5.0
+    "Long name" : u"長い名前",
+    "Short name" : u"短い名前",
+    "Both" : u"両方",
+    "Only long names" : u"長い名前のみ",
+    "Only short names" : u"短い名前のみ",
+    "All names" : u"全ての名前",
     "Open Customization files, Avisynth scripts or Avsp options files" : u"カスタマイズファイル、AviSynth スクリプトまたは AvsP オプションファイルを開く",
     "All supported" : u"対応するすべてのファイル",
     "Customization file" : u"カスタマイズファイル",
     "AvsP data" : u"AvsP データ",
     "Unrecognized files" : u"認識されないファイル",
-    "Select the functions to import" : u"", # New in v2.5.0
-    "Check selected" : u"", # New in v2.5.0
-    "Check all" : u"", # New in v2.5.0
-    "Check all in this file" : u"", # New in v2.5.0
-    "Check all not customized" : u"", # New in v2.5.0
-    "Uncheck selected" : u"", # New in v2.5.0
-    "Uncheck all" : u"", # New in v2.5.0
-    "Uncheck all in this file" : u"", # New in v2.5.0
-    "Uncheck all customized" : u"", # New in v2.5.0
+    "Select the functions to import" : u"インポートする関数を選択",
+    "Check selected" : u"選択済みの項目をチェック",
+    "Check all" : u"全てチェック",
+    "Check all in this file" : u"このファイルの全てをチェック",
+    "Check all not customized" : u"カスタマイズされてないものを全てチェック",
+    "Uncheck selected" : u"選択済みの項目のチェックを外す",
+    "Uncheck all" : u"全てのチェックを外す",
+    "Uncheck all in this file" : u"このファイルの全てのチェックを外す",
+    "Uncheck all customized" : u"カスタマイズされた項目の全てのチェックを外す",
     "Red - a customized function already exists." : u"警告 - カスタマイズされた関数はすでに存在します。",
-    "Invalid plugin function name \"{name}\". Must be \"pluginname_functionname\"." : u"", # New in v2.5.1
+    "Invalid plugin function name \"{name}\". Must be \"pluginname_functionname\"." : u"無効なプラグイン関数名 \"{name}\"。\"プラグイン名_関数名\"で無ければなりません。",
     "No customizations to export!" : u"エクスポートするカスタマイズが存在しません！",
     "Save filter customizations" : u"フィルタカスタマイズの保存",
     "This will delete all filter customizations. Continue?" : u"すべてのフィルタカスタマイズを削除します。続行しますか？",
     "Warning" : u"警告",
     "This will delete all manually defined presets. Continue?" : u"手動で定義されたすべてのプリセットを削除します。続行しますか？",
-    "Do you really want to delete this custom filter?" : u"", # New in v2.5.0
-    "Do you really want to reset this filter?" : u"", # New in v2.5.0
+    "Do you really want to delete this custom filter?" : u"このカスタムフィルターを本当に削除していいですか？",
+    "Do you really want to reset this filter?" : u"このフィルターを本当にリセットしていいですか？",
     "Edit filter database" : u"フィルタデータベースを編集",
     "Default" : u"デフォルト",
     "Min value" : u"最小値",
@@ -161,6 +164,9 @@ messages = {
     "Translation updated" : u"翻訳が更新されました",
     "%s translation file updated.  No new messages to translate." : u"%s 翻訳ファイルが更新されました。未訳のメッセージはありません。",
     "%s language couldn't be loaded" : u"%s 言語を読み込むことが出来ませんでした",
+    "Solarized light" : u"", # New in v2.5.1
+    "Solarized dark" : u"", # New in v2.5.1
+    "Zenburn" : u"", # New in v2.5.1
     "Alternatively, specify now its directory." : u"代わりに、今そのディレクトリを指定して下さい。",
     "Select the {0} directory" : u"{0} ディレクトリを選択",
     "Make sure you have AviSynth installed and that there are no unstable plugins or avsi files in the AviSynth plugins directory." : u"AviSynth がインストールされているか、AviSynth のプラグインディレクトリに不安定なプラグインや avsi ファイルがないか確認してください。",
@@ -191,18 +197,10 @@ messages = {
     "Documentation search url:" : u"ヘルプ検索 URL:",
     "The web address to search if docs aren't found (the filter's name replaces %filtername%)" : u"ヘルプが見つからない場合に検索するウェブアドレス（%filtername% がフィルタの名前に置換されます）",
     "Text" : u"テキスト",
-    "Show filter calltips" : u"フィルタのツールチップを表示",
-    "Turn on/off automatic tips when typing filter names" : u"フィルタ名の入力時に自動的にヒントを表示する/しない",
-    "Always show calltips any time the cursor is within the filter's arguments" : u"カーソルがフィルタの引数の中にある時はつねにツールチップを表示する",
-    "Frequent calltips" : u"つねにツールチップを表示",
-    "Syntax highlighting" : u"シンタックスの強調表示",
-    "Turn on/off avisynth-specific text colors and fonts" : u"AviSynth 特有のテキストの色とフォントを強調する/しない",
-    "Prefer functions over variables" : u"", # New in v2.5.0
-    "When a word could be either a function or a variable, highlight it as function" : u"", # New in v2.5.0
-    "Show autocomplete on capital letters" : u"大文字で始まる単語に自動補完を表示",
-    "Turn on/off automatic autocomplete list when typing words starting with capital letters" : u"大文字で始まる単語の入力時に自動的に自動補完リストを表示する/しない",
-    "Amount of letters typed" : u"入力された文字の数",
-    "Show autocomplete list when typing a certain amount of letters" : u"一定数の文字が入力されたら補完リストを表示",
+    "Highlight the text as if it wasn't enclosed by triple quotes" : u"三重引用符(トリプルクオート)で括られていないかのようにハイライト表示します",
+    "Style inside triple-quoted strings" : u"三重引用符(トリプルクオート)で括られた文字列スタイル",
+    "Prefer functions over variables" : u"変数よりも関数を優先する",
+    "When a word could be either a function or a variable, highlight it as function" : u"関数にも変数にもなり得る単語は関数としてハイライト表示する",
     "Don't allow lines wider than the window" : u"ウインドウ幅で行を折り返す",
     "Wrap text" : u"テキストの折り返し",
     "Draw lines at fold points" : u"折りたたみ位置に線を描画",
@@ -213,17 +211,25 @@ messages = {
     "Tab width" : u"タブ幅",
     "Initial space to reserve for the line margin in terms of number of digits. Set it to 0 to disable showing line numbers" : u"桁数の観点から行番号欄のマージンを確保するための初期のスペース。0 に設定すると行番号表示を無効化",
     "Line margin width" : u"行余白幅",
+    "Show filter calltips" : u"フィルタのツールチップを表示",
+    "Turn on/off automatic tips when typing filter names" : u"フィルタ名の入力時に自動的にヒントを表示する/しない",
+    "Always show calltips any time the cursor is within the filter's arguments" : u"カーソルがフィルタの引数の中にある時はつねにツールチップを表示する",
+    "Frequent calltips" : u"つねにツールチップを表示",
+    "Show autocomplete on capital letters" : u"大文字で始まる単語に自動補完を表示",
+    "Turn on/off automatic autocomplete list when typing words starting with capital letters" : u"大文字で始まる単語の入力時に自動的に自動補完リストを表示する/しない",
+    "Amount of letters typed" : u"入力された文字の数",
+    "Show autocomplete list when typing a certain amount of letters" : u"一定数の文字が入力されたら補完リストを表示",
     "Autocomplete" : u"自動補完",
-    "AviSynth user function database" : u"", # New in v2.5.0
-    "Select what functions beside internal and user-defined will be included in the database" : u"", # New in v2.5.0
-    "Autoloaded plugin functions" : u"", # New in v2.5.0
-    "Include the functions on autoloaded plugins in the database" : u"", # New in v2.5.0
-    "Autoloaded script functions" : u"", # New in v2.5.0
-    "Include the functions on autoloaded avsi files in the database" : u"", # New in v2.5.0
-    "Include plugin functions from the program's database" : u"", # New in v2.5.0
-    "Plugin functions from database" : u"", # New in v2.5.0
-    "Include user script functions from the program's database" : u"", # New in v2.5.0
-    "Script functions from database" : u"", # New in v2.5.0
+    "AviSynth user function database" : u"AviSynthユーザー関数データベース",
+    "Select what functions beside internal and user-defined will be included in the database" : u"データベースから取り込まれる内蔵関数とユーザー定義関数の選択",
+    "Autoloaded plugin functions" : u"オートローディングされたプラグイン関数",
+    "Include the functions on autoloaded plugins in the database" : u"オートローディングされたプラグイン関数をデータベースに取り込む",
+    "Autoloaded script functions" : u"オートローディングされたスクリプト関数",
+    "Include the functions on autoloaded avsi files in the database" : u"オートローディングされたavsiファイルの関数をデータベースに取り込む",
+    "Include plugin functions from the program's database" : u"プログラムのデータベースからプラグイン関数を取り込む",
+    "Plugin functions from database" : u"データベースのプラグイン関数",
+    "Include user script functions from the program's database" : u"プログラムのデータベースからユーザースクリプト関数を取り込む",
+    "Script functions from database" : u"データベースのスクリプト関数",
     "Add user defined variables into autocomplete list" : u"自動補完リストにユーザー定義変数を追加する",
     "Show autocomplete with variables" : u"自動補完を変数付きで表示",
     "Show autocomplete on single matched lowercase variable" : u"一件のみマッチした小文字の変数に自動補完を表示",
@@ -253,12 +259,12 @@ messages = {
     "Refresh preview when switch focus on video window or change a value in slider window" : u"ビデオウィンドウにフォーカスを切り替えるかスライダウィンドの値を変更した時にプレビューをリフレッシュする",
     "Seeking to a certain frame will seek to that frame on all tabs" : u"あるフレームへシークした時、すべてのタブでそのフレームにシークする",
     "Shared timeline" : u"タイムラインの共有",
-    "Only on tabs of the same characteristics" : u"", # New in v2.5.0
-    "Only share timeline for clips with the same resolution and frame count" : u"", # New in v2.5.0
-    "Enable scroll wheel through similar tabs" : u"スクロールホイールによるタブの切り替えを許可",
-    "Mouse scroll wheel cycles through tabs with similar videos" : u"マウスホイールのスクロールで隣接するビデオのタブを切り替える",
-    "Enable scroll wheel through tabs on the same group" : u"", # New in v2.5.0
-    "Mouse scroll wheel cycles through tabs assigned to the same tab group" : u"", # New in v2.5.0
+    "Only on tabs of the same characteristics" : u"同じ特性を持つタブのみ",
+    "Only share timeline for clips with the same resolution and frame count" : u"同じ解像度、同じフレーム数のクリップのみタイムラインを共有する",
+    "Enable scroll wheel through similar tabs" : u"スクロールホイールによる類似したタブの切り替えを許可",
+    "Mouse scroll wheel cycles through tabs with similar videos" : u"マウスホイールのスクロールで類似したビデオのタブを切り替える",
+    "Enable scroll wheel through tabs on the same group" : u"スクロールホイールによる同じグループのタブの切り替えを許可",
+    "Mouse scroll wheel cycles through tabs assigned to the same tab group" : u"マウスホイールのスクロールで同じグループのタブを切り替える",
     "Allow AvsPmod to resize and/or move the program window when updating the video preview" : u"ビデオプレビューを更新した時、プログラムウィンドウをリサイズ/移動することを許可する",
     "Allow AvsPmod to resize the window" : u"ウィンドウのリサイズを許可",
     "Separate video preview window" : u"ビデオプレビューウィンドウを分離",
@@ -269,6 +275,8 @@ messages = {
     "Minimum number of lines to show when displaying the video preview" : u"ビデオプレビューを表示する時に表示するテキストの最小行数",
     "Customize the video information shown in the program status bar" : u"プログラムステータスバーに表示されるビデオ情報をカスタマイズ",
     "Customize video status bar..." : u"ビデオステータスバーのカスタマイズ...",
+    "Error message font" : u"エラーメッセージフォント",
+    "Set the font used for displaying the error if evaluating the script fails" : u"スクリプトの評価が失敗ときのエラー表示に使われるフォントを設定する",
     "User Sliders" : u"ユーザースライダ",
     "Hide slider window by default" : u"デフォルトでスライダウィンドウを隠す",
     "Keep the slider window hidden by default when previewing a video" : u"ビデオプレビュー時、デフォルトでスライダウィンドウを隠れたままにする",
@@ -276,6 +284,8 @@ messages = {
     "Create user sliders automatically using the filter database" : u"フィルタデータベースを使ってユーザースライダを自動的に生成する",
     "Create user sliders for int and float arguments" : u"int 型と float 型の引数にユーザースライダを生成",
     "type int/float (numerical slider)" : u"int/float 型（数値スライダ）",
+    "Create listboxes for int list arguments" : u"int 型のリスト引数にリストボックスを生成",
+    "type int (list)" : u"int 型（リスト）",
     "Create color pickers for hex color arguments" : u"16 進数の引数にカラーピッカーを生成",
     "type int (hex color)" : u"int 型（16 進数）",
     "Create radio boxes for bool arguments" : u"bool 型の引数にラジオボックスを生成",
@@ -312,15 +322,20 @@ messages = {
     "When closing a tab, don't prompt to save the script if it doesn't already exist on the filesystem" : u"タブを閉じる時、スクリプトがファイルシステムに存在しなくても保存を促さない",
     "Prompt to save each script with unsaved changes when exiting the program" : u"プログラム終了時に保存されていない変更のあるスクリプトを保存するためのダイアログを表示する",
     "Prompt to save scripts on program exit" : u"プログラム終了時に保存ダイアログを表示",
+    "Auto" : u"自動",
+    "Auto: CRLF on Windows and LF on *nix for new scripts, existing scripts keep their current line endings" : u"自動: WindowsではCRLF、*nixにはLFを使用し、すでに存在するスクリプトは現在の改行コードを維持する",
+    "Force CRLF" : u"CRLFを強制",
+    "Force LF" : u"LFを強制",
+    "Line endings" : u"改行コード",
     "Save *.avs scripts with AvsPmod markings" : u"*.avs スクリプトを AvsPmod 独自のマーキング付きで保存",
     "Save AvsPmod-specific markings (user sliders, toggle tags, etc) as a commented section in the *.avs file" : u"AvsPmod 独自のマーキング（ユーザースライダ、切り替えタグなど）を *.avs ファイル内にコメントとして保存する",
     "Start dialogs on the last used directory" : u"ダイアログを最後に使用されたディレクトリから開始する",
     "If unchecked, the script's directory is used" : u"チェックを外すと、スクリプトのディレクトリが使用される",
     "Start save image dialogs on the last used directory" : u"画像保存ダイアログを最後に使用されたディレクトリから開始する",
-    "Choose a default pattern for image filenames. %s -> script title, %06d -> frame number padded to six digits" : u"", # New in v2.5.0
-    "Default image filename pattern" : u"", # New in v2.5.0
-    "Ask for JPEG quality" : u"", # New in v2.5.0
-    "When saving a JPEG image, prompt for the quality level. Use the value from the last time if not checked" : u"", # New in v2.5.0
+    "Choose a default pattern for image filenames. %s -> script title, %06d -> frame number padded to six digits" : u"画像ファイル名のデフォルトパターンの選択。%s -> スクリプトタイトル, %06d -> 6桁に0詰めされたフレーム数",
+    "Default image filename pattern" : u"デフォルトの画像ファイル名のパターン",
+    "Ask for JPEG quality" : u"JPEGの品質について尋ねる",
+    "When saving a JPEG image, prompt for the quality level. Use the value from the last time if not checked" : u"JPEG画像を保存する際、品質レベルの設定欄を表示する。チェックされてない場合は前回の品質レベルを使用する",
     "Misc" : u"その他",
     "Choose the language used for the interface" : u"インターフェイスに使用される言語を選択",
     "Language" : u"言語",
@@ -347,7 +362,7 @@ messages = {
     "minutes" : u"分",
     "seconds" : u"秒",
     "frames" : u"フレーム",
-    "Add tab to group" : u"", # New in v2.5.0
+    "Add tab to group" : u"グループにタブを追加",
     "Extend selection to line down position" : u"選択範囲を一行下へ拡張",
     "Scroll down" : u"スクロールダウン",
     "Extend rectangular selection to line down position" : u"長方形の選択範囲を一行下へ拡張",
@@ -425,6 +440,11 @@ messages = {
     "Fit inside window" : u"プレビューウィンドウに合わせる",
     "Vertically" : u"垂直方向",
     "Horizontally" : u"水平方向",
+    "Black" : u"ブラック",
+    "Dark grey" : u"ダークグレー",
+    "Medium grey" : u"ミディアムグレー",
+    "Light grey" : u"ライトグレー",
+    "White" : u"ホワイト",
     "&File" : u"ファイル(&F)",
     "Create a new tab" : u"新しいタブを作成",
     "New tab" : u"新しいタブ",
@@ -443,10 +463,10 @@ messages = {
     "Save script as..." : u"名前を付けて保存...",
     "Reload script" : u"スクリプトの再読み込み",
     "Reopen the current script file if it has changed" : u"変更があったら現在のスクリプトファイルを開き直す",
-    "If the current script is saved to a file, open its directory" : u"", # New in v2.5.1
-    "Open script's directory" : u"", # New in v2.5.1
-    "Save the current script as a HTML document" : u"", # New in v2.5.0
-    "Export HTML" : u"", # New in v2.5.0
+    "If the current script is saved to a file, open its directory" : u"現在のスクリプトが保存されている場合、そのディレクトリを開く",
+    "Open script's directory" : u"スクリプトのディレクトリを開く",
+    "Save the current script as a HTML document" : u"現在のスクリプトをHTMLドキュメントとして保存する",
+    "Export HTML" : u"HTMLとしてエクスポート",
     "&Print script" : u"スクリプトの印刷(&P)",
     "Configure page for printing" : u"印刷のためにページを設定",
     "Page setup" : u"ページ設定",
@@ -491,8 +511,8 @@ messages = {
     "Select All" : u"すべて選択",
     "Select all the text" : u"テキストをすべて選択",
     "&Insert" : u"挿入(&I)",
-    "Expand a snippet tag, or select a snippet from the list" : u"", # New in v2.5.0
-    "Insert snippet" : u"", # New in v2.5.0
+    "Expand a snippet tag, or select a snippet from the list" : u"スニペットタグを展開、またはリストからスニペットを選択する",
+    "Insert snippet" : u"スニペットの挿入",
     "Choose a source file to insert into the text" : u"テキストに挿入するソースファイルを選択",
     "Insert source..." : u"ソースの挿入...",
     "Get a filename from a dialog box to insert into the text" : u"ダイアログボックスからファイル名を取得してテキストに挿入",
@@ -522,14 +542,16 @@ messages = {
     "Show list of filternames matching the partial text at the cursor" : u"カーソル位置に部分的なテキストにマッチするフィルタ名のリストを表示",
     "Autocomplete all" : u"すべて自動補完",
     "Disregard user's setting, show full list of filternames matching the partial text at the cursor" : u"ユーザー設定を無視して、カーソル位置の不完全なテキストにマッチするフィルタ名の完全なリストを表示",
-    "Autocomplete parameter/filename" : u"", # New in v2.5.0
-    "If the first characters typed match a parameter name, complete it. If they're typed on a string, complete the filename" : u"", # New in v2.5.0
+    "Autocomplete parameter/filename" : u"パラメーターやファイル名のオートコンプリート",
+    "If the first characters typed match a parameter name, complete it. If they're typed on a string, complete the filename" : u"最初に入力にした文字がパラメーター名にマッチした場合、それを補完する。それらが文字列ならばファイル名を補完する",
     "Show calltip" : u"ツールチップの表示",
     "Show the calltip for the filter (only works if cursor within the arguments)" : u"フィルタのツールチップを表示（カーソルが引数の中にある場合のみ）",
     "Show function definition" : u"関数定義の表示",
     "Show the AviSynth function definition dialog for the filter" : u"このフィルタの AviSynth 関数定義ダイアログを表示する",
     "Filter help file" : u"フィルタのヘルプを表示",
     "Run the help file for the filter (only works if cursor within the arguments or name is highlighted)" : u"フィルタのヘルプを表示（カーソルが引数の中にあるか名前が強調されている場合のみ）",
+    "Include functions defined in the current script in the filter database, only for this tab" : u"このタブのみ現在のスクリプトの関数の定義をフィルターデータベースに取り込む",
+    "Parse script for function definitions" : u"関数の定義のためにスクリプトを解析",
     "&Miscellaneous" : u"その他(&M)",
     "Move line up" : u"1 行上へ移動",
     "Move the current line or selection up by one line" : u"現在の行か選択範囲の 1 行上へ移動する",
@@ -554,12 +576,14 @@ messages = {
     "Set title (auto)" : u"タイトルの設定（自動）",
     "Edit title for bookmarks in a list table" : u"一覧表のブックマークのタイトルを編集",
     "Set title (manual)" : u"タイトルの設定（手動）",
-    "Not include this tab on any group" : u"", # New in v2.5.0
-    "Add tab to this group" : u"", # New in v2.5.0
-    "Clear current tab group" : u"", # New in v2.5.0
-    "Clear all tab groups" : u"", # New in v2.5.0
-    "Apply offsets" : u"", # New in v2.5.0
-    "Use the difference between showed frames when the tabs were added to the group as offsets" : u"", # New in v2.5.0
+    "Not include this tab on any group" : u"このタブをどのグループにも含めない",
+    "Add tab to this group" : u"このグループにタブを追加",
+    "Clear current tab group" : u"現在のタブグループをクリア",
+    "Clear all tab groups" : u"全てのタブグループをクリア",
+    "Apply offsets" : u"オフセットを適用",
+    "Use the difference between showed frames when the tabs were added to the group as offsets" : u"オフセットを適用してタブをグループに追加するとき、表示フレームとの差を使用する",
+    "Offset also bookmarks" : u"ブックマークもオフセットする",
+    "Apply the offset also to the currently set bookmarks" : u"現在セットされているブックマークもオフセットを適用する",
     "&Navigate" : u"移動 (&N)",
     "Go to &bookmark" : u"ブックマークへ移動 (&b)",
     "Go to next bookmarked frame" : u"次のブックマークされたフレームへ移動",
@@ -611,6 +635,10 @@ messages = {
     "Set selection startpoint" : u"選択開始位置の設定",
     "Set a selection endpoint (shows the trim editor if not visible)" : u"選択終了位置を設定する（非表示ならトリムエディタを表示）",
     "Set selection endpoint" : u"選択終了位置の設定",
+    "Move selections before the current frame" : u"現在のフレームの前に選択範囲を移動する",
+    "The current selections are cut from the timeline and inserted before the current frame. Bookmarks are shifted accordingly." : u"現在の選択範囲は切り取られ、現在のフレームの前に挿入されます。それによりブックマークが移動します",
+    "Move selections after the current frame" : u"現在のフレームの後に選択範囲を移動する",
+    "The current selections are cut from the timeline and inserted after the current frame. Bookmarks are shifted accordingly." : u"現在の選択範囲は切り取られ、現在のフレームの後に挿入されます。それによりブックマークが移動します",
     "Zoom video preview to 25%" : u"ビデオプレビューを 25% にズーム",
     "Zoom video preview to 50%" : u"ビデオプレビューを 50% にズーム",
     "Zoom video preview to 100% (normal)" : u"ビデオプレビューを 100% にズーム（標準）",
@@ -633,20 +661,38 @@ messages = {
     "Use full range" : u"フルレンジを使用",
     "For YV12 only, assume it is progressive (default)" : u"YV12 についてのみ、プログレッシブと仮定（デフォルト）",
     "For YV12 only, assume it is interlaced" : u"YV12 についてのみ、インターレースと仮定",
+    "Bith &depth" : u"ビット深度",
+    "8-bit" : u"", # New in v2.5.1
+    "Regular 8-bit depth (default)" : u"正規 8-bit depth (デフォルト)",
+    "Stacked 16-bit, MSB on top, range reduced to 10-bit. Requires MaskTools v2 loaded" : u"Stacked 16-bit、MSBが上側、レンジは10-bitに切り詰められます。MaskTools v2のロードが必須です",
+    "Stacked yuv420p10 or yuv444p10" : u"", # New in v2.5.1
+    "Stacked 16-bit, MSB on top" : u"Stacked 16-bit、MSBが上側",
+    "Stacked yuv420p16 or yuv444p16" : u"", # New in v2.5.1
+    "Interleaved 16-bit (little-endian), range reduced to 10-bit. Requires MaskTools v2 loaded" : u"Interleaved 16-bit (リトルエンディアン)、レンジは10-bitに切り詰められます。MaskTools v2のロードが必須です",
+    "Interleaved yuv420p10 or yuv444p10" : u"", # New in v2.5.1
+    "Interleaved 16-bit (little-endian)" : u"Interleaved 16-bit (リトルエンディアン)",
+    "Interleaved yuv420p16 or yuv444p16" : u"", # New in v2.5.1
+    "Background &color" : u"背景色",
+    "Follow current theme" : u"現在のテーマに従う",
+    "Use RGB {hex_value}" : u"RGB {hex_value} を使用",
+    "Use a custom color" : u"カスタムカラーを使用",
+    "Custom" : u"カスタム",
+    "Choose the color used if 'custom' is selected" : u"\"カスタム\"を選択してる場合、使用する色を選択してください",
+    "Select custom color" : u"カスタムカラーの選択",
     "Create the new AviSynth clip on the same environment. Useful for tweaking parameters" : u"新しい AviSynth スクリプトを同じ環境で作成。パラメータの調整に有用",
     "Keep variables on refreshing" : u"更新時に変数を保持",
     "Save image as..." : u"名前を付けて画像を保存...",
     "Save the current frame as a bitmap" : u"現在のフレームをビットマップファイルとして保存",
-    "Quick save image" : u"", # New in v2.5.0
-    "Save the current frame as a bitmap with a default filename, overwriting the file if already exists" : u"", # New in v2.5.0
-    "Copy image to clipboard" : u"", # New in v2.5.0
-    "Copy the current frame to the clipboard as a bitmap" : u"", # New in v2.5.0
+    "Quick save image" : u"画像をクイックセーブ",
+    "Save the current frame as a bitmap with a default filename, overwriting the file if already exists" : u"現在のフレームをビットマップとしてデフォルトファイル名で保存する。ファイルがすでに存在するのならば上書きされる",
+    "Copy image to clipboard" : u"画像をクリップボードにコピー",
+    "Copy the current frame to the clipboard as a bitmap" : u"現在のフレームをビットマップとしてクリップボードにコピー",
     "Force the script to reload and refresh the video frame" : u"スクリプトを再読込して、ビデオフレームを最新の状態にする",
     "Refresh preview" : u"プレビューの更新",
     "Show/Hide the preview" : u"プレビューの表示/非表示",
     "Toggle the video preview" : u"ビデオプレビューのトグル",
-    "Toggle preview placement" : u"", # New in v2.5.1
-    "When not using a separate window for the video preview, toggle between showing it at the bottom (default) or to the right" : u"", # New in v2.5.1
+    "Toggle preview placement" : u"プレビュー位置の切り替え",
+    "When not using a separate window for the video preview, toggle between showing it at the bottom (default) or to the right" : u"ビデオプレビューウィンドウを分離していない場合、ウィンドウ上のプレビューする位置を下（デフォルト）や右に切り替える",
     "Release all open videos from memory" : u"開いたすべてのビデオをメモリから解放する",
     "Release all videos from memory" : u"すべてのビデオをメモリから解放",
     "Switch focus between the video preview and the text editor" : u"ビデオプレビューとテキストエディタの間でフォーカスを切り替える。",
@@ -673,8 +719,8 @@ messages = {
     "Fonts and colors..." : u"フォントと色...",
     "Edit the extension-based templates for inserting sources" : u"ソースの挿入のための拡張子別テンプレートを編集",
     "Extension templates..." : u"拡張子別テンプレート...",
-    "Snippets..." : u"", # New in v2.5.0
-    "Edit insertable text snippets" : u"", # New in v2.5.0
+    "Snippets..." : u"スニペット...",
+    "Edit insertable text snippets" : u"挿入可能なテキストスニペットを編集する",
     "Configure the program keyboard shortcuts" : u"プログラムのキーボードショートカットを編集する",
     "Keyboard shortcuts..." : u"キーボードショートカット...",
     "Configure program settings" : u"プログラムの設定を行う",
@@ -712,11 +758,11 @@ messages = {
     "&Macros" : u"マクロ(&M)",
     "Close" : u"閉じる",
     "Rename" : u"名前を変更",
-    "Group" : u"", # New in v2.5.0
+    "Group" : u"グループ",
     "Save" : u"保存",
     "Save as..." : u"名前を付けて保存...",
     "Reload" : u"再読み込み",
-    "Open directory" : u"", # New in v2.5.1
+    "Open directory" : u"ディレクトリを開く",
     "Copy to new tab" : u"新しいタブにコピー",
     "Reposition to" : u"位置の変更",
     "Crop editor" : u"クロップエディタ",
@@ -737,7 +783,7 @@ messages = {
     "Insert Trim() commands:" : u"Trim() コマンドを挿入:",
     "Insert Dissolve() commands:" : u"Dissolve() コマンドを挿入:",
     "Use the buttons which appear on the video slider handle to create the frame selections to trim." : u"選択範囲の生成にはビデオスライダのつまみの上にあるボタンを使用してください。",
-    "The script's directory doesn't exist anymore!" : u"", # New in v2.5.1
+    "The script's directory doesn't exist anymore!" : u"スクリプトディレクトリはこれ以上存在しません！",
     "Print Preview" : u"印刷プレビュー",
     "Failed to create print preview" : u"印刷プレビューの作成に失敗しました",
     "Print Error" : u"印刷エラー",
@@ -756,14 +802,17 @@ messages = {
     "Frame No." : u"フレーム番号",
     "Time **" : u"時間 **",
     "Left-click on a selected item or double-click to edit.\n\n*  RED - a historic title, not a real bookmark.\n** Time may be unavailable or incorrect before preview refreshed." : u"編集するには、選択されたアイテムの上で左クリックするかダブルクリックしてください。\n\n*  赤字 - 削除済みタイトル。実際のブックマークではない。\n** プレビュー更新前は、時間は利用不可または不正確な可能性あり。",
-    "Image saved to \"{0}\"" : u"", # New in v2.5.0
+    "Image saved to \"{0}\"" : u"画像は \"{0}\" に保存されました",
     "No image to save" : u"保存する画像がありません",
-    "Error requesting frame {number}" : u"", # New in v2.5.0
-    "Couldn't open clipboard" : u"", # New in v2.5.0
+    "Error requesting frame {number}" : u"フレーム {number} リクエストエラー",
+    "Couldn't open clipboard" : u"クリップボードを開けませんでした",
+    "Cannot use crop editor unless bit depth is set to 8" : u"ビット深度を8-bitに設定しない限りクロップエディタは使用できません",
+    "Cannot change bit depth while crop editor is open!" : u"クロップエディタを開いてる間はビット深度を変更できません！",
+    "Interleaved RGB48" : u"", # New in v2.5.1
     "Error loading the script" : u"スクリプトの読み込みエラー",
     "Starting analysis pass..." : u"解析パスを開始しています...",
-    "Frame %s/%s (%#.4g fps)" : u"", # New in v2.5.0
-    "Finished (%s fps average)" : u"", # New in v2.5.0
+    "Frame %s/%s (%#.4g fps)" : u"フレーム %s/%s (%#.4g fps)",
+    "Finished (%s fps average)" : u"終了 (%s fps average)",
     "Frame size:" : u"フレームサイズ:",
     "Length:" : u"長さ:",
     "Frame rate:" : u"フレームレート:",
@@ -780,30 +829,32 @@ messages = {
     "Could not find the macros folder!" : u"マクロフォルダが見つかりませんでした！",
     "Failed to import the selected tool" : u"選択されたツールのインポートに失敗しました",
     "You must restart for changes to take effect!" : u"変更を有効にするには再起動する必要があります！",
-    "Basic" : u"基本設定",
+    "Basic (1)" : u"基本 (1)",
+    "Override all fonts to use a specified monospace font (no effect on scrap window)" : u"すべてのフォントに優先して指定された等幅フォントを使用（スクラップウィンドウには無効）",
+    "Use monospaced font:" : u"等幅フォントを使用",
     "Default:" : u"デフォルト:",
     "Comment:" : u"コメント:",
     "Block Comment:" : u"ブロックコメント:",
     "__END__ Comment:" : u"__END__ コメント:",
     "Number:" : u"数値:",
-    "Operator:" : u"演算子:",
     "String:" : u"文字列:",
     "Triple-quoted string:" : u"三重クオート文字列:",
+    "Assignment:" : u"代入",
+    "Operator:" : u"演算子:",
+    "Basic (2)" : u"基本 (2)",
     "Internal filter:" : u"内蔵フィルタ:",
     "External filter:" : u"外部フィルタ:",
     "Internal function:" : u"内蔵関数:",
     "User defined function:" : u"ユーザー定義関数:",
-    "Unknown function:" : u"", # New in v2.5.0
+    "Unknown function:" : u"不明な関数",
     "Clip property:" : u"クリップのプロパティ:",
-    "Parameter:" : u"", # New in v2.5.0
-    "Assignment:" : u"", # New in v2.5.0
-    "AviSynth keyword:" : u"AviSynth キーワード:",
+    "Parameter:" : u"パラメーター",
     "AviSynth data type:" : u"AviSynth データ型:",
+    "AviSynth keyword:" : u"AviSynth キーワード:",
     "AvsP user slider:" : u"AvsP ユーザースライダ:",
-    "Monospaced font:" : u"等幅フォント:",
     "Advanced" : u"高度な設定",
     "Incomplete string:" : u"不完全な文字列:",
-    "Syntax highlight strings which are not completed in a single line differently" : u"",
+    "Syntax highlight strings which are not completed in a single line differently" : u"一行の不完全な文字列を異なった書式でハイライト表示する",
     "Brace highlight:" : u"波括弧の強調:",
     "Bad brace:" : u"不当な波括弧:",
     "Bad number:" : u"不当な数字:",
@@ -812,14 +863,13 @@ messages = {
     "Calltip:" : u"コールチップ:",
     "Calltip highlight:" : u"コールチップの強調:",
     "Cursor:" : u"カーソル:",
+    "If checked, highlight also foreground" : u"チェックされてる場合、前景もハイライトする",
     "Selection highlight:" : u"セクションの強調:",
     "Current line highlight:" : u"現在行の強調:",
     "Highlight the line that the caret is currently in" : u"現在キャレットがある行を強調",
     "Fold margin:" : u"折り畳みの余白:",
     "Scrap window" : u"スクラップウィンドウ",
-    "Override all fonts to use a specified monospace font (no effect on scrap window)" : u"すべてのフォントに優先して指定された等幅フォントを使用（スクラップウィンドウには無効）",
-    "Use monospaced font:" : u"等幅フォントを使用",
-    "No dot required in file extension!" : u"ファイル拡張子にドットは不要です！",
+    "File extension shouldn't contain dots!" : u"ファイルの拡張子にドットを含めてはいけません！",
     "Insert aborted:" : u"挿入中止:",
     "Edit extension-based templates" : u"拡張子ベースのテンプレートを編集",
     "File extension" : u"ファイル拡張子",
@@ -827,9 +877,9 @@ messages = {
     "This info is used for inserting sources based on file extensions." : u"この情報は、ファイル拡張子に基づいてソースを挿入するために使用されます。",
     "Any instances of *** in the template are replaced with the filename." : u"テンプレート内の *** は、ファイル名に置換されます。",
     "(If you want relative paths instead of the full filename, use [***].)" : u"（フルパスではなく相対パスを使いたいなら、[***] を使用して下さい。）",
-    "Only alphanumeric and underscores allowed!" : u"", # New in v2.5.0
-    "Tag" : u"", # New in v2.5.0
-    "Snippet" : u"", # New in v2.5.0
+    "Only alphanumeric and underscores allowed!" : u"英数字とアンダースコアのみが許可されています！",
+    "Tag" : u"タグ",
+    "Snippet" : u"スニペット",
     "Associating .avs files will write to the windows registry." : u".avs ファイルの関連付けを Windows レジストリに書き込む。",
     "Do you wish to continue?" : u"続行しますか？",
     "Associate avs files for all users?" : u"AVS ファイルをすべてのユーザーに関連付ける",
@@ -840,9 +890,9 @@ messages = {
     "Could not find the Avisynth plugins folder!" : u"AviSynth プラグインフォルダが見つかりませんでした！",
     "Could not find %(readme)s!" : u"%(readme)s が見つかりませんでした！",
     "Could not find %(changelog)s!" : u"%(changelog)s が見つかりませんでした！",
-    "AvsPmod version %(version)s " : u"AvsPmod バージョン %(version)s ",
+    "{prog_name} v{version} ({arch})" : u"", # New in v2.5.1
     "AvsP Website" : u"AvsP ホームページ",
-    "AvsPmod repository" : u"AvsPmod リポジトリ",
+    "AvsPmod Website" : u"AvsPmod ホームページ",
     "Active thread on Doom9's forum" : u"Doom9 フォーラム AvsP スレッド",
     "This program is freeware under the GPL license." : u"このプログラムは、GPL ライセンスのフリーウェアです。",
     "Input a frame number or time (hr:min:sec) and hit Enter. Right-click to retrieve from history." : u"フレーム番号または時間（時:分:秒）を入力し、Enter キーを押して下さい。右クリックで履歴から検索できます。",
@@ -899,15 +949,14 @@ messages = {
     "Save session before closing all tabs?" : u"すべてのタブを閉じる前にセッションを保存しますか？",
     "Save current script" : u"現在のスクリプトを保存",
     "Directory %(dirname)s does not exist!" : u"ディレクトリ %(dirname)s は存在しません！",
-    "Syntax highlighting is not active!" : u"", # New in v2.5.0
-    "Script has no text!" : u"", # New in v2.5.0
-    "HTML files" : u"", # New in v2.5.0
+    "Script has no text!" : u"スクリプトにテキストがありません！",
+    "HTML files" : u"HTMLファイル",
     "Load a session" : u"セッションの読み込み",
     "File has been modified since the session was saved. Reload?" : u"セッションが保存されてからファイルが変更されました。再読込しますか？",
     "Save the session" : u"セッションの保存",
     "Save current frame" : u"現在のフレームを保存",
-    "Introduce the JPEG Quality (0-100)" : u"", # New in v2.5.0
-    "JPEG Quality" : u"", # New in v2.5.0
+    "Introduce the JPEG Quality (0-100)" : u"JPEG 品質の指定 (0-100)",
+    "JPEG Quality" : u"JPEG 品質",
     "Insert a source" : u"ソースの挿入",
     "All supported plugins" : u"すべての対応プラグイン",
     "AviSynth plugins" : u"AviSynth プラグイン",
@@ -974,6 +1023,8 @@ messages = {
     "Error in the macro:" : u"マクロのエラー",
     "Couldn't find %(macrofilename)s" : u"%(macrofilename)s が見つかりませんでした",
     "An AviSynth script editor" : u"AviSynth スクリプトエディタ",
+    "Error trying to display the clip" : u"", # New in v2.5.1
+    "Is bit-depth set correctly?" : u"ビット深度の設定は正しいですか？",
     "Invalid string: " : u"無効な文字列: ",
     "Failed to open the AVI file" : u"AVI ファイルのオープンに失敗しました",
     "Failed to open the AVI frame" : u"AVI フレームのオープンに失敗しました",
@@ -996,7 +1047,7 @@ messages = {
     "&Don't wrap-around" : u"改行しない",
     "&Case sensitive" : u"大文字と小文字を区別",
     "Use regular e&xpressions" : u"正規表現を使用",
-    "&Interpret escape sequences" : u"", # New in v2.5.1
+    "&Interpret escape sequences" : u"エスケープシーケンスを解釈",
     "Cannot find \"%(text)s\"" : u"\"%(text)s\" が見つかりません",
     "Replaced %(count)i times" : u"%(count)i 回置換しました",
     "Program Settings" : u"プログラム設定",
@@ -1070,7 +1121,7 @@ messages = {
     "Open an AviSynth script" : u"AviSynth スクリプトを開く",
     "Save the video as" : u"ビデオを名前を付けて保存",
     "Select a program" : u"プログラムの選択",
-    "Unreplaced items remain in the command line:" : u"",
+    "Unreplaced items remain in the command line:" : u"置換されてないアイテムはコマンドラインに残ります: ",
     "Unknown exe paths!" : u"不明な実行ファイルのパス！",
     "General" : u"一般",
     "Credits warning minutes:" : u"クレジット警告分数:",
@@ -1143,8 +1194,8 @@ messages = {
     "Bookmarks at Intervals" : u"一定間隔でブックマーク",
     "Bookmarks to Chapter" : u"ブックマークをチャプタに変換",
     "ConditionalReader file from bookmarks" : u"ブックマークから ConditionalReader ファイルを生成",
-    "DeleteFrame" : u"",
-    "DuplicateFrame" : u"",
+    "DeleteFrame" : u"現在フレーム削除",
+    "DuplicateFrame" : u"現在フレーム複製",
     "Import bookmarks from file" : u"ファイルからブックマークをインポート",
     "Preview from current point" : u"現在の位置からプレビュー",
     "Random Clip Order" : u"ランダム順にクリップを連結",
@@ -1172,9 +1223,9 @@ messages = {
     "Choose a frame step or a number of intervals" : u"フレームステップまたは周期の選択",
     "Frame step" : u"フレームステップ",
     "Number of intervals" : u"周期",
-    "End frame" : u"", # New in v2.5.0
-    "Start frame" : u"", # New in v2.5.0
-    "Clear bookmarks in the same range" : u"", # New in v2.5.0
+    "End frame" : u"終了フレーム",
+    "Start frame" : u"開始フレーム",
+    "Clear bookmarks in the same range" : u"同じ範囲内のブックマークをクリア",
 
     #--- Macro: Bookmarks to Chapter ---#
     "Save chapter file as..." : u"名前をつけてチャプタファイルを保存...",
@@ -1230,21 +1281,21 @@ messages = {
     "Save image sequence" : u"画像シークエンスの保存",
     "Output format" : u"出力フォーマット",
     "Select frames" : u"フレームの選択",
-    "Depth (PNG only)" : u"", # New in v2.5.0
+    "Depth (PNG only)" : u"ビット深度 (PNG のみ)",
     "Quality (JPEG only)" : u"品質 (JPEG のみ)",
     "Show saving progress" : u"保存状況を表示",
-    "Output directory and basename. A padded number is added as suffix" : u"", # New in v2.5.0
+    "Output directory and basename. A padded number is added as suffix" : u"ディレクトリとベース名を出力。0埋めされた数字が接尾語として付加される",
     "Use always this basename" : u"つねにベース名を使用",
     "Use always this directory" : u"つねにこのディレクトリを使用",
-    "Add the frame number as the suffix" : u"", # New in v2.5.0
-    "Save ranges to subdirectories" : u"", # New in v2.5.0
+    "Add the frame number as the suffix" : u"フレーム番号を接尾語として付加",
+    "Save ranges to subdirectories" : u"範囲をサブディレクトリに保存",
     "Range between bookmarks" : u"ブックマーク間の範囲",
     "Trim editor selections" : u"トリムエディタの選択範囲",
     "All frames" : u"すべてのフレーム",
     "Select an output directory and basename for the new images files" : u"新規画像ファイルの出力ディレクトリとベース名を選択",
     "There is not Trim editor selections" : u"トリムエディタの選択範囲が見つかりません",
     "Saving images..." : u"画像の保存中...",
-    "scene_{0:0{1}}" : u"", # New in v2.5.0
+    "scene_{0:0{1}}" : u"シーン_{0:0{1}}",
     "%d image files created." : u"%d 個の画像ファイルが生成されました。",
     "Information" : u"情報",
 
