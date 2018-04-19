@@ -17064,7 +17064,7 @@ class MainFrame(wxp.Frame):
     def UpdateProgramTitle(self, title=None):
         if title is None:
             title = self.GetProgramTitle()
-        self.SetTitle('%s - %s' % (title, self.name))
+        self.SetTitle('%s - %s %s' % (title, self.name, '64bit' if self.x86_64 else '32bit'))
         if self.separatevideowindow:
             self.videoDialog.SetTitle('%s - [%s]' % (title, self.name))
     
