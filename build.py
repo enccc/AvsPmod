@@ -110,7 +110,13 @@ def main():
                             print 'Failed'
                         else: break
         else:
-            print "\neditbin not found.  Large address aware flag not set"
+            # Call editbin.exe if it is exist in PATH
+            if False:
+                if os.system('""%s" /LARGEADDRESSAWARE "%s""' % 
+                        (editbin, os.path.join(programdirname, 'run.exe'))):
+                    print 'Failed'
+            else:
+                print "\neditbin not found.  Large address aware flag not set"
     
     # Compress the files with UPX, if available
     if x86_64:
